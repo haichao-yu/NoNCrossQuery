@@ -74,6 +74,6 @@ def run_cq_basic(alpha=0.2, c=0.85, q=121, s=0, d=19, k=10):
 
     print("The running time of CQ_Basic is " + str(Runtime) + " seconds.")
 
-    TopKAuthorNames = AuthorDict[TopKResults - 1]
+    TopKAuthorNames = AuthorDict[TopKResults - 1, 0]
 
     return TopKAuthorNames

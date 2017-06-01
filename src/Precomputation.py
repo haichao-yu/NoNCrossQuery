@@ -107,5 +107,6 @@ def precomputation(A, A_ID, G, PrecompFileName):
     data = {}
     data['Anorm'] = Anorm
     data['Ynorm'] = Ynorm
+    data['Y'] = Y
     data['I_n'] = I_n
     np.save(PrecompFileName, data)
