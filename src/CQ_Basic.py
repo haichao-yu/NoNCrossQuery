@@ -69,8 +69,8 @@ def cq_basic(W, q, s, d, k, tilde_c, A_ID):
         Lower = Lower + (1 - tilde_c) * (tilde_c ** Iter) * p[S, 0]
         Upper = Lower + (tilde_c ** (Iter + 1)) * Wmax[S]
 
-        # update threshold by the kth lower bound
-        kthSmallestValue = np.partition(-Lower.todense().A1, k)[k-1]
+        # update threshold by the kth lower bound (must have problem in here)
+        kthSmallestValue = np.partition(-Lower.todense().A1, k - 1)[k - 1]  # zero-based index here
         Theta = -kthSmallestValue
 
         flattenUpper = np.ravel(Upper)
