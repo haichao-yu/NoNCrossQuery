@@ -10,14 +10,14 @@ The goal of this algorithm is to solve:<br/>
 
 ## Functions
 
-* **__init__.py:** program entry;
+* **\_\_init\_\_.py:** program entry;
 * **Precomputation.py:** CR and CQ precomputation (to obtain normalized A and normalized Y)
-* **RunCQ_Basic:** run basic version of CrossQuery algorithm
-* **RunCQ_Fast:** run fast version of CrossQuery algorithm
-* **RunCQ_DBLP:** run CrossRank algorithm to solve CrossQuery problem
-* **CQ_Basic:** CrossQuery-basic algorithm
-* **CQ_Fast:** CrossQuery-fast algorithm
-* **CR:** CrossRank algorithm
+* **RunCQ_Basic.py:** run basic version of CrossQuery algorithm
+* **RunCQ_Fast.py:** run fast version of CrossQuery algorithm
+* **RunCQ_DBLP.py:** run CrossRank algorithm to solve CrossQuery problem
+* **CQ_Basic.py:** CrossQuery-basic algorithm
+* **CQ_Fast.py:** CrossQuery-fast algorithm
+* **CR.py:** CrossRank algorithm
 * **ExtractSubNet.py:** extract a relevant sub-network from the main network w.r.t. source and target domains, use the sub-network in the CrossQuery-fast algorithm
 * **DijkstraExpansion.py:** conduct one step expansion of Dijkstra's algorithm
 
