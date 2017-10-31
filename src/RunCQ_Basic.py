@@ -7,7 +7,7 @@ import CQ_Basic
 
 
 # note that python index start from 0, while matlab index start from 1.
-def run_cq_basic(alpha=0.2, c=0.85, q=121, s=0, d=19, k=10):
+def run_cq_basic(alpha=0.2, c=0.85, q=121, s=0, d=19, k=10, dataset="../data/DBLP_NoN.npy"):
     """
     CrossQuery-Basic evaluation on DBLP dataset
     
@@ -27,7 +27,7 @@ def run_cq_basic(alpha=0.2, c=0.85, q=121, s=0, d=19, k=10):
     '''
     Load NoN data
     '''
-    data = np.load("../data/DBLP_NoN.npy").item()
+    data = np.load(dataset).item()
     CoAuthorNets = data['CoAuthorNets']
     ConfNet = data['ConfNet']
     ConfDict = data['ConfDict']

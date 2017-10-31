@@ -6,7 +6,7 @@ import Precomputation
 import CR
 
 
-def run_cr_dblp(alpha=0.2, c=0.85, MaxIter=1000, epsilon=1e-15, q=121, s=0, d=19, k=10):
+def run_cr_dblp(alpha=0.2, c=0.85, MaxIter=1000, epsilon=1e-15, q=121, s=0, d=19, k=10, dataset="../data/DBLP_NoN.npy"):
     """
     CrossRank evaluation on DBLP dataset
     
@@ -24,7 +24,7 @@ def run_cr_dblp(alpha=0.2, c=0.85, MaxIter=1000, epsilon=1e-15, q=121, s=0, d=19
     '''
     Load NoN data
     '''
-    data = np.load("../data/DBLP_NoN.npy").item()
+    data = np.load(dataset).item()
     CoAuthorNets = data['CoAuthorNets']
     ConfNet = data['ConfNet']
     ConfDict = data['ConfDict']
